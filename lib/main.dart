@@ -1,0 +1,24 @@
+import 'package:flutter/material.dart';
+import 'package:notepad_app/screens/note_list.dart';
+import 'package:notepad_app/screens/note_detail.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Note Keeper',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.deepPurple
+      ),
+
+      home: NoteList(),
+    );
+  }
+}
+
